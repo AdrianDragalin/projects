@@ -1,0 +1,16 @@
+import string
+
+words = raw_input().split(' ')
+for i in xrange(len(words)):
+    words[i] = string.capitalize(words[i])
+
+print ' '.join(words)
+
+print " ".join(x.capitalize() for x in raw_input().split(" "))
+
+import string
+string.capwords("I enjoy eating pizza")
+>>>"I Enjoy Eating Pizza"
+
+def capitalize(line):
+    return ' '.join(s[:1].upper() + s[1:] for s in line.split(' '))
