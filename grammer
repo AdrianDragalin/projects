@@ -1,16 +1,19 @@
 import string
-
 words = raw_input().split(' ')
 for i in xrange(len(words)):
     words[i] = string.capitalize(words[i])
-
 print ' '.join(words)
-
-print " ".join(x.capitalize() for x in raw_input().split(" "))
+(this uses a for loop to within a range to capitalize each word in a sentence)
 
 import string
 string.capwords("I enjoy eating pizza")
->>>"I Enjoy Eating Pizza"
+>>"I Enjoy Eating Pizza"
+(use method string.capwords to capitalize each string)
+
+print " ".join(x.capitalize() for x in raw_input().split(" "))
+(a simple one line code to capitalize each word)
 
 def capitalize(line):
     return ' '.join(s[:1].upper() + s[1:] for s in line.split(' '))
+(another way to capitalize each string)
+    
